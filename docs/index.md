@@ -15,11 +15,11 @@ Browse through the help pages by clicking on the top navigation menu and selecti
 Tasks:
 
 - [x] Fill out the About section
-- [ ] Fill out the Git section
+- [x] Fill out the Git section
     * [x] Installation
     * [x] Zigma360 team git workflow
     * [x] Git commands
-	* [ ] Undoing Changes
+    * [x] Undoing Changes
 - [ ] Prepare Tips & Tricks section
 
 :octicons-heart-fill-24:{ .heart }
