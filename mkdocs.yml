@@ -10,6 +10,7 @@ nav:
       - 'Installation': 'git/installation.md'
       - 'Zigma360 git workflow': 'git/zigma360-git-workflow.md'
       - 'Git Commands': 'git/git-commands.md'
+      - 'Undoing Changes': 'git/undoing-changes.md'
     - About:
       - about/index.md
       - 'Getting started': 'about/getting-started.md'
@@ -48,7 +49,7 @@ theme:
       - navigation.indexes
       - content.code.annotate
       - announce.dismiss
-      
+
     icon:
       repo: fontawesome/brands/bitbucket
 

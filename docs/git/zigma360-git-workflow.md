@@ -8,7 +8,7 @@ We use a similar strategy to the [GitLab Workflow](http://help.zigma360.com/Deve
 
 Web access to the Zigma360 Git Bitbucket server: [https://git.zigma360.com/dashboard](https://git.zigma360.com/dashboard)
 
-The repository has the **master branch** for the main development, branches for each release with a minor version (**2-93-stable**, **2-94-stable**) and branches for **tasks** `feature/My-task-name` or **bugs** `bug/An-annoying-bug`.
+The repository has the **master branch** for the main development, branches for each release with a minor version (**2-99-stable**, **2-100-stable**) and branches for **tasks** `feature/My-task-name` or **bugs** `bug/An-annoying-bug`.
 
 Any significant change to the code (more than 1 hour) should start with an issue (task or bug) in the tracking system where the goal is described.
 
@@ -24,7 +24,7 @@ Any significant change to the code (more than 1 hour) should start with an issue
 There are some **brunch types** if it's a feature, bug or quick fix: **Bugfix**, **Feature**, **Hotfix**, **Custom** and **Release** (when a new version is preparing).
 Developers have to specify which type of brunch they use for a creating branch.
 This can be done in the git web interface Bitbucket or directly from a bug tracking system like Jira
-![img](http://help.zigma360.com/Development/images/Git/Create_brunch.png)
+![img](../img/git/Create_brunch.png)
 
 ## Getting Started
 
@@ -42,13 +42,13 @@ it's good to specify this option to do always **rebase after pull** instead of m
 `git config --global pull.rebase true`
 
 
-![img](http://help.zigma360.com/Development/images/Git/Git_clone_1.png)
+![img](../img/git/Git_clone_1.png)
 
-![img](http://help.zigma360.com/Development/images/Git/Git_clone_2.png)
+![img](../img/git/Git_clone_2.png)
 
-![img](http://help.zigma360.com/Development/images/Git/Git_clone_3.png)
+![img](../img/git/Git_clone_3.png)
 
-![img](http://help.zigma360.com/Development/images/Git/Git_clone_4.png)
+![img](../img/git/Git_clone_4.png)
 
 Wait until the work has been successfully done
 
@@ -57,30 +57,30 @@ Wait until the work has been successfully done
 
 Update your local repository to the newest commits (**git pull**) - safe operation
 
-![img](http://help.zigma360.com/Development/images/Git/Git_pull.png)
+![img](../img/git/Git_pull.png)
 
- 
+
 
 Update your local repository to the newest commits and undo all local changes (**git fetch**)
 
-![img](http://help.zigma360.com/Development/images/Git/Git_fetch.png)
+![img](../img/git/Git_fetch.png)
 
- 
+
 ### Check for modifications
 
 To check changes in a repository you can do from this context menu
 
-![img](http://help.zigma360.com/Development/images/Git/Git_check_changes1.png)
+![img](../img/git/Git_check_changes1.png)
 
-![img](http://help.zigma360.com/Development/images/Git/Git_check_changes2.png)
+![img](../img/git/Git_check_changes2.png)
 
- 
+
 ### Commiting
 
 Commit changes and push to the server at the same time
 
-![img](http://help.zigma360.com/Development/images/Git/Git_comit1.png)
+![img](../img/git/Git_comit1.png)
 
-![img](http://help.zigma360.com/Development/images/Git/Git_comit2.png)
+![img](../img/git/Git_comit2.png)
 
 If you have forgotten to add some files to the last commit you can add them using a next one with the option "**Amend Last Commit**".
