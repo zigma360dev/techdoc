@@ -62,20 +62,34 @@ mkdocs, version 1.2.0 from /usr/local/lib/python3.8/site-packages/mkdocs (Python
 
     A quick solution may be to preface every Python command with `python -m` like this:
 
-    ```
+    ```bash
     python -m pip install mkdocs
     python -m mkdocs
     ```
 
     For a more permanent solution, you may need to edit your `PATH` environment variable to include the `Scripts` directory of your Python installation. Recent versions of Python include a script to do this for you. Navigate to your Python installation directory (for example `C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\`), open the `Tools`, then `Scripts` folder, and run the `win_add2path.py` file by double clicking on it. Alternatively, you can download the [script](https://github.com/python/cpython/blob/master/Tools/scripts/win_add2path.py) and run it (`python win_add2path.py`).
 
+## Installing Material theme for MkDocs
+
 Material theme for MkDocs can be installed with `pip`:
 
-```
+```bash
 pip install mkdocs-material
 ```
 
+## Upgrading Material theme for MkDocs
 
+Upgrade to the latest version with:
+
+```bash
+pip install --upgrade mkdocs-material
+```
+
+Show the currently installed version with:
+
+```bash
+pip show mkdocs-material
+```
 
 ## Working with a project
 

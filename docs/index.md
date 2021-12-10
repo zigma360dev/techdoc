@@ -20,6 +20,4 @@ Tasks:
     * [x] Zigma360 team git workflow
     * [x] Git commands
     * [x] Undoing Changes
-- [ ] Prepare Tips & Tricks section
-
-:octicons-heart-fill-24:{ .heart }
+- [x] Prepare How-To section

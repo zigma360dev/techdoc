@@ -11,6 +11,8 @@ nav:
       - 'Zigma360 git workflow': 'git/zigma360-git-workflow.md'
       - 'Git Commands': 'git/git-commands.md'
       - 'Undoing Changes': 'git/undoing-changes.md'
+    - 'How-To':
+      - 'Zigma cloud certificate': 'how-to/cloud-wildcard-certificate.md'
     - About:
       - about/index.md
       - 'Getting started': 'about/getting-started.md'
@@ -24,10 +26,6 @@ extra:
 
 
 theme:
-#    name: mkdocs
-#    name: readthedocs
-#    name: bootstrap4
-#    name: flatly
     name: material
     highlightjs: true
     suppress_nextprev: false

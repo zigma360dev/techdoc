@@ -4,7 +4,7 @@
 
 ## General Rules
 
-We use a similar strategy to the [GitLab Workflow](http://help.zigma360.com/Development/#.gitlab_workflow).
+We use a similar strategy to the GitLab Workflow.
 
 Web access to the Zigma360 Git Bitbucket server: [https://git.zigma360.com/dashboard](https://git.zigma360.com/dashboard)
 
