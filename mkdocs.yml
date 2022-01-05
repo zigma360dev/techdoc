@@ -1,7 +1,7 @@
 site_name: Zigma360 TechDoc
 copyright: Copyright &copy; 2021 Zigma360
-repo_url: https://git.zigma360.com/projects/ZIG/repos/zigma360/browse
-repo_name: zigma360
+#repo_url: https://git.zigma360.com/projects/ZIG/repos/zigma360/browse
+#repo_name: zigma360
 
 nav:
     - Home: 'index.md'
@@ -13,6 +13,7 @@ nav:
       - 'Undoing Changes': 'git/undoing-changes.md'
     - 'How-To':
       - 'Zigma cloud certificate': 'how-to/cloud-wildcard-certificate.md'
+      - 'Porting Projects to .NET 6': 'hot-to/porting-csproject-to-net6.md'
     - About:
       - about/index.md
       - 'Getting started': 'about/getting-started.md'

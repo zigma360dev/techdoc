@@ -1,12 +1,14 @@
 # Wildcard SSL certificate for Zigma cloud service using Let’s Encrypt
 
-In this page will cover, how to generate a wildcard SSL certificate for the __*.client.zigma360.com__ domain using Let’s Encrypt free service and a PowerShell module Posh-ACME.
+In this page will cover, how to generate a wildcard SSL certificate for the __*.client.zigma360.com__ domain using Let’s Encrypt free service and a PowerShell module [Posh-ACME](https://poshac.me/docs/v4/).
 
 ## Requirements and Platform Support
 
 - Supports Windows PowerShell 5.1 (Desktop edition) **with .NET Framework 4.7.1** or later
 - Supports PowerShell 6.2 or later ([Core edition](https://docs.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell)) on all supported OS platforms.
 - Requires `FullLanguage` [language mode](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes)
+
+To check PowerShell version: `$PSversionTable` or `get-host|Select-Object version`
 
 ## Installation Posh-ACME (Stable)
 
@@ -31,6 +33,9 @@ Set-PAServer LE_PROD
 !!! note
     `LE_PROD` is a shortcut for the Let's Encrypt Production server's directory URL.
      Other currently supported shortcuts include `LE_STAGE`, `BUYPASS_PROD`, `BUYPASS_TEST`, and `ZEROSSL_PROD`.
+
+!!! warning
+    If the Set-PAServer command executes with an error `Set-PAServer : Errors occurred wile loading the format data file...xml is not digitally signed..` you will probably need to run this command as administrator `Set-ExecutionPolicy RemoteSigned -Force` and try to execute the previous command again.
 
 ## Your First Certificate
 
