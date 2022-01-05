@@ -13,7 +13,7 @@ nav:
       - 'Undoing Changes': 'git/undoing-changes.md'
     - 'How-To':
       - 'Zigma cloud certificate': 'how-to/cloud-wildcard-certificate.md'
-      - 'Porting Projects to .NET 6': 'hot-to/porting-csproject-to-net6.md'
+      - 'Porting Projects to .NET 6': 'how-to/porting-csproject-to-net6.md'
     - About:
       - about/index.md
       - 'Getting started': 'about/getting-started.md'
