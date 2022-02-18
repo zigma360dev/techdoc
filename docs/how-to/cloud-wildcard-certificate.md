@@ -93,6 +93,23 @@ Subject                  NotAfter             KeyLength Thumbprint              
 CN=*.client.zigma360.com 3/10/2022 8:34:28 AM 2048      39EB0268B6FD669F7D4A879813B117F7635C50FE {*.client.zigma360.com}
 ```
 
+If you see this message then it means you need to update a TXT record for your domain:
+
+```
+Please create the following TXT records:
+------------------------------------------
+_acme-challenge.client.zigma360.com -> 5JzcKSxpnV7P0uCSyQ6NMwYj79llkrHYR3io5kv9Akc
+------------------------------------------
+
+Press any key to continue.:
+```
+
+To do so, open your domain configuration panel for example https://domainname.shop/admin?id=870947&edit=dns&advanced=1
+
+find the `_acme-challenge.client.zigma360.com` TXT record and put a new value.
+
+Then go back to the PowerShell window and press any key, wait until you get the message about successfully renewal.
+
 Run the command to show the path to the certificate:
 
 ```powershell
