@@ -1,0 +1,982 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Zigma cloud certificate - Zigma360 TechDoc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wildcard-ssl-certificate-for-zigma-cloud-service-using-lets-encrypt" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Zigma360 TechDoc" class="md-header__button md-logo" aria-label="Zigma360 TechDoc" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zigma360 TechDoc
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zigma cloud certificate
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../git/" class="md-tabs__link">
+        Git
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        How-To
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Zigma360 TechDoc" class="md-nav__button md-logo" aria-label="Zigma360 TechDoc" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Zigma360 TechDoc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../git/">Git</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Git" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Git
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/zigma360-git-workflow/" class="md-nav__link">
+        Zigma360 git workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/git-commands/" class="md-nav__link">
+        Git Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/undoing-changes/" class="md-nav__link">
+        Undoing Changes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          How-To
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How-To" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          How-To
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Zigma cloud certificate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Zigma cloud certificate
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-platform-support" class="md-nav__link">
+    Requirements and Platform Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-posh-acme-stable" class="md-nav__link">
+    Installation Posh-ACME (Stable)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#picking-a-server" class="md-nav__link">
+    Picking a Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-certificate" class="md-nav__link">
+    Your First Certificate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-an-existing-certificate-for-the-zigma4clients-azure-cloud-service" class="md-nav__link">
+    Updating an existing certificate for the zigma4clients azure cloud service
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating an existing certificate for the zigma4clients azure cloud service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renewals" class="md-nav__link">
+    Renewals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../porting-csproject-to-net6/" class="md-nav__link">
+        Porting Projects to .NET 6
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../about/">About</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="User Guide" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.mkdocs.org/user-guide/writing-your-docs/" class="md-nav__link">
+        Writing Your Docs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://squidfunk.github.io/mkdocs-material/reference/abbreviations/" class="md-nav__link">
+        Syntax Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/" class="md-nav__link">
+        Deploying Your Docs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-platform-support" class="md-nav__link">
+    Requirements and Platform Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-posh-acme-stable" class="md-nav__link">
+    Installation Posh-ACME (Stable)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#picking-a-server" class="md-nav__link">
+    Picking a Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-certificate" class="md-nav__link">
+    Your First Certificate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-an-existing-certificate-for-the-zigma4clients-azure-cloud-service" class="md-nav__link">
+    Updating an existing certificate for the zigma4clients azure cloud service
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating an existing certificate for the zigma4clients azure cloud service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renewals" class="md-nav__link">
+    Renewals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="wildcard-ssl-certificate-for-zigma-cloud-service-using-lets-encrypt">Wildcard SSL certificate for Zigma cloud service using Let’s Encrypt<a class="headerlink" href="#wildcard-ssl-certificate-for-zigma-cloud-service-using-lets-encrypt" title="Permanent link">&para;</a></h1>
+<p>In this page will cover, how to generate a wildcard SSL certificate for the <strong>*.client.zigma360.com</strong> domain using Let’s Encrypt free service and a PowerShell module <a href="https://poshac.me/docs/v4/">Posh-ACME</a>.</p>
+<h2 id="requirements-and-platform-support">Requirements and Platform Support<a class="headerlink" href="#requirements-and-platform-support" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Supports Windows PowerShell 5.1 (Desktop edition) <strong>with .NET Framework 4.7.1</strong> or later</li>
+<li>Supports PowerShell 6.2 or later (<a href="https://docs.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell">Core edition</a>) on all supported OS platforms.</li>
+<li>Requires <code>FullLanguage</code> <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes">language mode</a></li>
+</ul>
+<p>To check PowerShell version: <code>$PSversionTable</code> or <code>get-host|Select-Object version</code></p>
+<h2 id="installation-posh-acme-stable">Installation Posh-ACME (Stable)<a class="headerlink" href="#installation-posh-acme-stable" title="Permanent link">&para;</a></h2>
+<p>The latest release can found in the <a href="https://www.powershellgallery.com/packages/Posh-ACME/">PowerShell Gallery</a>. Installing is easy from the gallery using <code>Install-Module</code>. <em>See <a href="https://docs.microsoft.com/en-us/powershell/scripting/gallery/installing-psget">Installing PowerShellGet</a> if you run into problems with it.</em></p>
+<div class="highlight"><pre><span></span><code><span class="c"># install for all users (requires elevated privs)</span>
+<span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">Posh-ACME</span> <span class="n">-Scope</span> <span class="n">AllUsers</span>
+
+<span class="c"># install for current user</span>
+<span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">Posh-ACME</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<h2 id="picking-a-server">Picking a Server<a class="headerlink" href="#picking-a-server" title="Permanent link">&para;</a></h2>
+<p>Before we begin, let's configure our ACME server to be the Let's Encrypt <em>Production</em> server.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Set-PAServer</span> <span class="n">LE_PROD</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>LE_PROD</code> is a shortcut for the Let's Encrypt Production server's directory URL.
+ Other currently supported shortcuts include <code>LE_STAGE</code>, <code>BUYPASS_PROD</code>, <code>BUYPASS_TEST</code>, and <code>ZEROSSL_PROD</code>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the Set-PAServer command executes with an error <code>Set-PAServer : Errors occurred wile loading the format data file...xml is not digitally signed..</code> you will probably need to run this command as administrator <code>Set-ExecutionPolicy RemoteSigned -Force</code> and try to execute the previous command again.</p>
+</div>
+<h2 id="your-first-certificate">Your First Certificate<a class="headerlink" href="#your-first-certificate" title="Permanent link">&para;</a></h2>
+<p>The bare minimum you need to request a certificate is just the domain name.
+Assuming you've reviewed the TOS link from before, add <code>-AcceptTOS</code> to the original command to proceed. You only need to do this once when creating a new account. You also probably want to associate an email address with this account so you can receive certificate expiration notifications (replace <code>admin@example.com</code> with your one). So let's do that even though it's not required.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">New-PACertificate</span> <span class="p">*.</span><span class="n">client</span><span class="p">.</span><span class="n">zigma360</span><span class="p">.</span><span class="n">com</span> <span class="n">-AcceptTOS</span> <span class="n">-Contact</span> <span class="s1">&#39;admin@example.com&#39;</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Multiple email addresses per account are supported. Just pass it an array of addresses.</p>
+</div>
+<p>Because you didn't specify a plugin, it will default to using the <code>Manual</code> DNS plugin. That manual plugin will also be prompting you to create a DNS TXT record to answer the ACME server's validation challenge for the domain.</p>
+<p>At this point, you can either press <code>Ctrl+C</code> to cancel the process and modify your command or go ahead and create the requested TXT record and hit any key to continue. We'll cover plugins next, so for now create the record manually and press a key to continue. If you run into problems creating the TXT record, check out <a href="https://poshac.me/docs/v4/Guides/Troubleshooting-DNS-Validation/">Troubleshooting DNS Validation</a>.</p>
+<p>The command will sleep for 2 minutes by default to allow the DNS changes to propagate. Then if the ACME server is able to properly validate the TXT record, the final certificate files are generated and the command should output the details of your new certificate. Only a subset of the details are displayed by default. To see them all, run <code>Get-PACertificate | fl</code>. The files generated in the output folder should contain the following:</p>
+<ul>
+<li><strong>cert.cer</strong> (Base64 encoded PEM certificate)</li>
+<li><strong>cert.key</strong> (Base64 encoded PEM private key)</li>
+<li><strong>cert.pfx</strong> (PKCS12 container with cert+key)</li>
+<li><strong>chain.cer</strong> (Base64 encoded PEM with the issuing CA chain)</li>
+<li><strong>chainX.cer</strong> (Base64 encoded PEM with alternate issuing CA chains)</li>
+<li><strong>fullchain.cer</strong> (Base64 encoded PEM with cert+chain)</li>
+<li><strong>fullchain.pfx</strong> (PKCS12 container with cert+key+chain)</li>
+</ul>
+<p>Posh-ACME is only designed to <em>obtain</em> certificates, not deploy them to your web server or service. The certificate details are written to the pipeline so you can either save them to a variable or pipe the output to another command. <a href="https://github.com/rmbolger/Posh-ACME.Deploy">Posh-ACME.Deploy</a> is a sister module containing some example deployment functions for common services to get you started. But ultimately, it's up to you how you want to deploy your certificates.</p>
+<p>The password on the PFX files is <code>poshacme</code> because we didn't override the default with <code>-PfxPass</code> or <code>-PfxPassSecure</code>. If you're running PowerShell with elevated privileges on Windows, you can also add the <code>-Install</code> switch to automatically import the certificate into the local computer's certificate store.</p>
+<p>So now you have a certificate and that's great! But Let's Encrypt certificates expire relatively quickly (90 days).</p>
+<h2 id="updating-an-existing-certificate-for-the-zigma4clients-azure-cloud-service">Updating an existing certificate for the <strong>zigma4clients</strong> azure cloud service<a class="headerlink" href="#updating-an-existing-certificate-for-the-zigma4clients-azure-cloud-service" title="Permanent link">&para;</a></h2>
+<p>All certificates issued by Let's Encrypt expire in 90 days, so we need to renew it in advance and update the old one in the service.
+The service finds certificate by name and it means there is no need to change any settings.
+<img alt="Web.config" src="../../img/zigma-service-sertificate-finds.png" /></p>
+<h3 id="renewals">Renewals<a class="headerlink" href="#renewals" title="Permanent link">&para;</a></h3>
+<p>The module saves all of the parameters associated with an order and re-uses the same values to renew it.
+Let's Encrypt currently caches authorizations for roughly 30 days, so the forced renewal won't need to go through validating the challenges again.
+Run this command to renew the certificate:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Submit-Renewal</span> <span class="n">-Force</span> <span class="n">-NoSkipManualDns</span>
+</code></pre></div>
+<p>If the renewal is successfully completed you can see something like this:</p>
+<div class="highlight"><pre><span></span><code>Subject                  NotAfter             KeyLength Thumbprint                               AllSANs
+-------                  --------             --------- ----------                               -------
+CN=*.client.zigma360.com 3/10/2022 8:34:28 AM 2048      39EB0268B6FD669F7D4A879813B117F7635C50FE {*.client.zigma360.com}
+</code></pre></div>
+<p>If you see this message then it means you need to update a TXT record for your domain:</p>
+<div class="highlight"><pre><span></span><code>Please create the following TXT records:
+------------------------------------------
+_acme-challenge.client.zigma360.com -&gt; 5JzcKSxpnV7P0uCSyQ6NMwYj79llkrHYR3io5kv9Akc
+------------------------------------------
+
+Press any key to continue.:
+</code></pre></div>
+<p>To do so, open your domain configuration panel for example https://domainname.shop/admin?id=870947&amp;edit=dns&amp;advanced=1</p>
+<p>find the <code>_acme-challenge.client.zigma360.com</code> TXT record and put a new value.</p>
+<p>Then go back to the PowerShell window and press any key, wait until you get the message about successfully renewal.</p>
+<p>Run the command to show the path to the certificate:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-PACertificate</span> <span class="p">|</span> <span class="nb">fl</span>
+</code></pre></div>
+<h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
+<p>Azure key vault <strong>zigma4clientskv</strong> is used to store the SSL certificate. What we need to do is:</p>
+<ul>
+<li>open the <em>zigma4clientskv</em> from the Azure portal</li>
+<li>open the <em>Certificates</em> section</li>
+<li>select the <em>Wildcard-client-zigma360-com</em> certificate</li>
+<li>click the <em>New version</em> button</li>
+<li>choose <em>Method of Certificate Creation</em>: <strong>Import</strong></li>
+<li>select a generated earlier new certificate, put the <code>poshacme</code> password or use your own and click the <em>Create</em> button</li>
+</ul>
+<p>Then open the <strong>zigma4clients</strong> cloud service to update link to the certificate:</p>
+<ul>
+<li>open the <em>Configuration</em> sections</li>
+<li>find the <code>Certificate</code> setting with the <code>Certificate1</code> name and update the <code>thumbprint</code> attribute to a thumbprint of the new certificate</li>
+<li>click the <strong>Save</strong> button</li>
+</ul>
+<p>The certificate is updated and the service takes it immediately is use.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../git/undoing-changes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Undoing Changes" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Undoing Changes
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../porting-csproject-to-net6/" class="md-footer__link md-footer__link--next" aria-label="Next: Porting Projects to .NET 6" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Porting Projects to .NET 6
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 Zigma360
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.tabs", "navigation.sections", "navigation.indexes", "content.code.annotate", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+    
+  </body>
+</html>
