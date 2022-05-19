@@ -127,4 +127,10 @@ Azure key vault **zigma4clientskv** is used to store the SSL certificate. What w
 - choose *Method of Certificate Creation*: **Import**
 - select a generated earlier new certificate, put the `poshacme` password or use your own and click the *Create* button
 
+Then open the **zigma4clients** cloud service to update link to the certificate:
+
+- open the *Configuration* sections
+- find the `Certificate` setting with the `Certificate1` name and update the `thumbprint` attribute to a thumbprint of the new certificate
+- click the **Save** button
+
 The certificate is updated and the service takes it immediately is use.

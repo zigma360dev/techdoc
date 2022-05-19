@@ -6,7 +6,7 @@ Moves changes from the working directory to the staging area. This gives you the
 
 #### Related Tutorials
 
-[Saving changes: git add](https://www.atlassian.com/git/tutorials/saving-changes?section=git-add)  
+[Saving changes: git add](https://www.atlassian.com/git/tutorials/saving-changes)  
 [Learn Git with Bitbucket Cloud: Copy your Git repository and add files](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud?section=copy-and-add-files)  
 [Using Branches: git merge](https://www.atlassian.com/git/tutorials/git-merge)  
 [Inspecting a repository: git status](https://www.atlassian.com/git/tutorials/inspecting-a-repository?section=git-status)
@@ -28,7 +28,7 @@ In addition to checking out old commits and old file revisions, git checkout is 
 
 #### Related Tutorials
 
-[Using Branches: git checkout](https://www.atlassian.com/git/tutorials/using-branches?section=git-checkout)  
+[Using Branches: git checkout](https://www.atlassian.com/git/tutorials/undoing-changes)  
 [Undoing Changes: git checkout](https://www.atlassian.com/git/tutorials/undoing-changes?section=git-checkout)  
 [Comparing Workflows: Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows?section=gitflow-workflow)
 
@@ -38,7 +38,7 @@ Removes untracked files from the working directory. This is the logical counterp
 
 #### Related Tutorials
 
-[Undoing Changes: git clean](https://www.atlassian.com/git/tutorials/undoing-changes?section=git-clean)
+[Undoing Changes: git clean](https://www.atlassian.com/git/tutorials/undoing-changes/git-clean)
 
 ### git clone
 
@@ -56,6 +56,7 @@ Takes the staged snapshot and commits it to the project history. Combined with g
 
 #### Related Tutorials
 
+[Committing: git commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)  
 [Using Branches: git merge](https://www.atlassian.com/git/tutorials/git-merge)  
 [Rewriting history: git commit --amend](https://www.atlassian.com/git/tutorials/rewriting-history?section=git-commit--ammend)  
 [Learn Git with Bitbucket Cloud: Copy your Git repository and add files](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud?section=copy-and-add-files)  
@@ -86,7 +87,7 @@ Fetching downloads a branch from another repository, along with all of its assoc
 
 #### Related Tutorials
 
-[Syncing: git fetch](https://www.atlassian.com/git/tutorials/syncing?section=git-fetch)  
+[Syncing: git fetch](https://www.atlassian.com/git/tutorials/syncing/git-fetch)  
 [Refs and the Reflog: Refspecs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog?section=refspecs)  
 [Syncing: git pull](https://www.atlassian.com/git/tutorials/syncing?section=git-pull)
 
@@ -126,7 +127,7 @@ Pulling is the automated version of git fetch. It downloads a branch from a remo
 
 #### Related Tutorials
 
-[Syncing: git pull](https://www.atlassian.com/git/tutorials/syncing?section=git-pull)  
+[Syncing: git pull](https://www.atlassian.com/git/tutorials/syncing/git-pull)  
 [Comparing Workflows: Centralized Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows?section=centralized-workflow)  
 [Git LFS](https://www.atlassian.com/git/tutorials/git-lfs)  
 [Comparing Workflows: Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows?section=forking-workflow)
@@ -137,7 +138,7 @@ Pushing is the opposite of fetching (with a few caveats). It lets you move a loc
 
 #### Related Tutorials
 
-[Syncing: git push](https://www.atlassian.com/git/tutorials/syncinggit-push)  
+[Syncing: git push](https://www.atlassian.com/git/tutorials/syncing/git-push)  
 [Refs and the Reflog: Refspecs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog?section=refspecs)  
 [Comparing Workflows: Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows?section=gitflow-workflow)  
 [Git LFS](https://www.atlassian.com/git/tutorials/git-lfs)
@@ -175,7 +176,7 @@ A convenient tool for administering remote connections. Instead of passing the f
 
 #### Related Tutorials
 
-[Syncing: git remote](https://www.atlassian.com/git/tutorials/syncing?section=git-remote)
+[Syncing: git remote](https://www.atlassian.com/git/tutorials/syncing)
 
 ### git reset
 
@@ -183,7 +184,7 @@ Undoes changes to files in the working directory. Resetting lets you clean up or
 
 #### Related Tutorials
 
-[Undoing Changes: git reset](https://www.atlassian.com/git/tutorials/undoing-changes?section=git-reset)  
+[Undoing Changes: git reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)  
 [Reset, Checkout, and Revert: Commit-level Operation](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting?section=commit-level-operations)  
 [Reset, Checkout, and Revert: File-level Operations](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting?section=file-level-operations)  
 [Undoing Changes: git clean](https://www.atlassian.com/git/tutorials/undoing-changes?section=git-clean)
@@ -194,7 +195,7 @@ Undoes a committed snapshot. When you discover a faulty commit, reverting is a s
 
 #### Related Tutorials
 
-[Undoing Changes: git revert](https://www.atlassian.com/git/tutorials/undoing-changes?section=git-revert)  
+[Undoing Changes: git revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)  
 [Reset, Checkout, and Revert: Commit-level Operation](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting?section=commit-level-operation)  
 [Reset, Checkout, and Revert: Summary](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting?section=summary)
 
@@ -204,7 +205,7 @@ Displays the state of the working directory and the staged snapshot. You’ll wa
 
 #### Related Tutorials
 
-[Inspecting a repository: git status](https://www.atlassian.com/git/tutorials/inspecting-a-repository?section=git-status)  
+[Inspecting a repository: git status](https://www.atlassian.com/git/tutorials/inspecting-a-repository)  
 [Git Stash](https://www.atlassian.com/git/tutorials/git-stash)  
 [Learn Git with Bitbucket Cloud: Use a Git branch to merge a file](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud?section=git-branch-to-merge)  
 [Learn Git with Bitbucket Cloud: Copy your Git repository and add files](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud?section=copy-and-add-files)
